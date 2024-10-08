@@ -1,0 +1,354 @@
+/* styles.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-red: #6d1616;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #a58585;
+  box-shadow: 0px 2px 5px rgba(61, 37, 37, 0.233);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 999;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+nav li a {
+  color: beige;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-underline-offset: 4px;
+}
+
+nav li a:hover {
+  color: var(--dark-red);
+  text-decoration: underline dashed;
+  font-weight: 700;
+}
+
+nav li a:hover .fa-solid {
+  color: var(--dark-red);
+  text-decoration: underline dashed;
+}
+
+nav li a .fa-solid {
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.logo {
+  padding: 0 15px;
+}
+.logo img {
+  width: 95px;
+  height: auto;
+}
+
+.iconos {
+  display: flex;
+}
+
+.iconos a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 18px;
+  transition: all ease-in-out 0.2s;
+}
+.iconos a:hover {
+  color: #dfd6d6;
+  transform: scale(1.2);
+  text-shadow: var(--dark-red) 1px 0 10px;
+}
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.principal {
+  background-image: url('../imagen/principal.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  overflow: hidden;
+}
+
+.contenidouno {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.71);
+}
+
+.contenidouno h1 {
+  margin-bottom: 15px;
+  font-family: 'Bitter', serif;
+  font-size: 40px;
+  letter-spacing: 1.2px;
+  text-shadow: #966767 3px 2px 15px;
+}
+
+.contenidouno h2 {
+  margin-bottom: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 24px;
+  color: #d1c5c5;
+}
+
+.contenidouno p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #c0bfbf;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button {
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: all ease-in-out 0.1s;
+  background-color: var(--dark-red);
+  color: #e5e1e1;
+  border: 2px dotted #e5e1e1;
+}
+
+.button:hover {
+  border-style: dashed;
+  background-color: #150d0d;
+  color: #e5e1e1;
+}
+
+.button .fa-solid {
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+/*estilos para el contenido dos*/
+
+.banner {
+  background-image: url('../imagen/people.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Ajusta la altura según tus necesidades */
+}
+
+.contenidodos {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.606);
+}
+
+.contenidodos h2 {
+  margin-bottom: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 27px;
+  letter-spacing: 1.5px;
+}
+
+.figuras {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.figuras a {
+  color: #dad9d9;
+  font-size: 22px;
+  text-decoration: none;
+  border-radius: 100%;
+  padding: 5px;
+  width: 28px;
+  height: 28px;
+  transition: all ease-in-out 0.2s;
+}
+.figuras a:hover {
+  color: #d8caca;
+  background: #3f1f1fcf;
+}
+
+/*creando la seccion 03 del contenido de la pagina*/
+
+.galeria {
+  background-color: #613d3d;
+  padding: 40px 30px;
+}
+
+.galeria h2 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-family: 'Nunito', serif;
+  letter-spacing: 1px;
+}
+
+.galeria p {
+  font-family: 'Bitter', serif;
+  color: #bfb8b8;
+  text-align: center;
+  font-size: 14px;
+  line-height: 5px;
+  margin-bottom: 10px;
+}
+
+.contenidotres {
+  max-width: 1200px;
+  height: 520px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.contenidotres .columna {
+  flex: 1;
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contenidotres .columna img {
+  max-width: 100%;
+  height: 200px;
+  border: 2px dotted #95b098;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.contenidotres .columna p {
+  margin-top: 20px;
+  text-align: justify;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.contenidotres .columna a {
+  display: inline-block;
+  padding: 10px 35px;
+  background-color: #808e75;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 13px;
+  margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.contenidotres .columna a:hover {
+  background-color: #626f59;
+  outline: 2px dashed rgb(243, 235, 235);
+}
+
+/*creando el Footer - pie de pagina final de
+  la pagina*/
+
+.footer {
+  background-color: #2a1717;
+  color: #fff;
+  padding: 20px;
+}
+
+.filas {
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.footer h3,
+.footer p {
+  color: #d7d2d2;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  font-weight: lighter;
+}
+
+.footer h3 {
+  font-size: 17px;
+}
+
+.footer p {
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.footer h4 {
+  font-family: 'Ubuntu', sans-serif;
+  color: #cecbcb;
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 0.8px;
+  margin-top: 12px;
+}
+
+.social-icons1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+
+/* Aquí puedes agregar tu CSS */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #eae8e1;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #928a8a; /* Cambia esto según el color que desees para el hover */
+}
